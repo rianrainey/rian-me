@@ -1,0 +1,9 @@
+body {
+
+  #page-wrapper {
+    @include outer-container;
+    .content {
+      @include span-columns(12);
+    }
+  }
+}

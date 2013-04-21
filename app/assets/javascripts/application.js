@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.flexslider
+//= require sliding_menu 
 //= require_tree .
 
