@@ -1,0 +1,480 @@
+<div id="viewport">
+    
+    <div id="menu">
+        <header>
+            <input id="search" type="text   " placeholder="Search">
+        </header>
+        <div class="scrollable">
+            <ul>
+                <li>Rian Rainey</li>
+            </ul>
+            <div class="separator">Quick Links</div>
+            <ul>
+              <li><a href="http://www.twitter.com/rianrainey" target="_blank">About Me</a></li>
+              <li><a href="http://www.twitter.com/rianrainey" target="_blank">From The Blog</a></li>
+              <li><a href="http://www.twitter.com/rianrainey" target="_blank">Contact Me</a></li>
+            </ul>
+            <div class="separator">Social Media</div>
+            <ul>
+              <li><a href="http://www.twitter.com/rianrainey" target="_blank">Twitter</a></li>
+              <li><a href="http://www.twitter.com/rianrainey" target="_blank">GitHub</a></li>
+              <li><a href="http://www.twitter.com/rianrainey" target="_blank">Instagram</a></li>
+              <li><a href="http://www.twitter.com/rianrainey" target="_blank">LinkedIn</a></li>
+              <li><a href="http://www.twitter.com/rianrainey" target="_blank">FourSquare</a></li>
+            </ul>
+            <div class="separator">&nbsp;</div>
+            <ul>
+                <li id="copy">
+                    <p>Rian Rainey &copy; <%= Time.now.year %></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="page">
+        <div id="close-mask"></div>
+      <header>
+          <div class="trigger"></div>
+          <h1>Rian.Me</h1>
+      </header>
+        <div id="composer">
+        </div>
+        <div class="body">
+            <div class="story">
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Jane Doe</a><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="actions">
+                        15 min ago
+                    </div>
+                    <div class="meta">
+                        <span>
+                            <img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+                            1 person
+                        </span>
+                        <span>
+                            <img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+                            1 comment
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <img width="40" height="40" title="" alt="" src="data:image/jpeg;base64,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" />
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Henry Brown</a><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit.
+                    </p>
+                    <div class="actions">
+                        45 min ago near New York
+                    </div>
+                    <div class="meta">
+                        <span>
+                            <img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+                            1 person
+                        </span>
+                        <span>
+                            <img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+                            2 comment
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/370588_1492902592_1826064075_q.jpg" />
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Jill Rosenthal</a><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="actions">
+                        1 hour ago near New York
+                    </div>
+                    <div class="meta">
+                        <span>
+                            <img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+                            5 person
+                        </span>
+                        <span>
+                            <img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+                            1 comment
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/370588_1492902592_1826064075_q.jpg" />
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Jill Rosenthal</a><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="actions">
+                        2 hours ago
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Jason Eng</a><br>
+                        Consectetur adipiscing elit lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="actions">
+                        2 hours ago
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Paul White</a><br>
+                        Consectetur adipiscing elit lorem ipsum dolor sit amet. consectetur adipiscing elit!
+                    </p>
+                    <div class="actions">
+                        2 hours ago
+                    </div>
+                    <div class="meta">
+                        <span>
+                            <img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+                            10 person
+                        </span>
+                        <span>
+                            <img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+                            2 comment
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Jason Eng</a><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit!!!
+                    </p>
+                    <div class="actions">
+                        2 hours ago
+                    </div>
+                </div>
+            </div>
+
+            <div class="story">
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Jane Doe</a><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="actions">
+                        15 min ago
+                    </div>
+                    <div class="meta">
+                        <span>
+                            <img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+                            1 person
+                        </span>
+                        <span>
+                            <img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+                            1 comment
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <img width="40" height="40" title="" alt="" src="data:image/jpeg;base64,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" />
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Henry Brown</a><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit.
+                    </p>
+                    <div class="actions">
+                        45 min ago near New York
+                    </div>
+                    <div class="meta">
+                        <span>
+                            <img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+                            1 person
+                        </span>
+                        <span>
+                            <img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+                            2 comment
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/370588_1492902592_1826064075_q.jpg" />
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Jill Rosenthal</a><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="actions">
+                        1 hour ago near New York
+                    </div>
+                    <div class="meta">
+                        <span>
+                            <img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+                            5 person
+                        </span>
+                        <span>
+                            <img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+                            1 comment
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/370588_1492902592_1826064075_q.jpg" />
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Jill Rosenthal</a><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="actions">
+                        2 hours ago
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Jason Eng</a><br>
+                        Consectetur adipiscing elit lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="actions">
+                        2 hours ago
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Paul White</a><br>
+                        Consectetur adipiscing elit lorem ipsum dolor sit amet. consectetur adipiscing elit!
+                    </p>
+                    <div class="actions">
+                        2 hours ago
+                    </div>
+                    <div class="meta">
+                        <span>
+                            <img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+                            10 person
+                        </span>
+                        <span>
+                            <img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+                            2 comment
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story">
+                <div class="contents">
+                    <p>
+                        <a href="" class="name">Jason Eng</a><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit!!!
+                    </p>
+                    <div class="actions">
+                        2 hours ago
+                    </div>
+                </div>
+            </div>
+
+
+      </div>
+    </div>
+
+</div>
+
+<script>
+(function() {
+    var debug = document.querySelectorAll('#debug')[0]
+
+    var body       = document.body
+      , viewport   = document.querySelectorAll('#viewport')[0]
+      , menu       = document.querySelectorAll('#menu')[0]
+      , page       = document.querySelectorAll('#page')[0]
+      , closeMask  = document.querySelectorAll('#close-mask')[0]
+      , trigger    = page.querySelectorAll('.trigger')[0];
+
+    var transitionEnd = whichTransitionEvent();
+
+    trigger.addEventListener('click', function() {
+        if (hasClass(body, 'menu-open')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    closeMask.addEventListener('click', function(event) {
+        event.preventDefault();
+        closeMenu();
+    });
+
+    closeMask.addEventListener('touchmove', function(event) {
+        event.preventDefault();
+    });
+
+    if (('ontouchend' in window)) {
+        var startX, startY, moveX, moveY,
+            matrix, m41 = 0,
+            shouldOpenMenu = false, shouldCloseMenu = false,
+            menuOpen = false, menuOpening = false, menuClosing = false;
+
+        page.addEventListener('touchstart', function(event) {
+            startX = event.touches[0].pageX;
+            startY = event.touches[0].pageY;
+
+            shouldOpenMenu = false;
+            shouldCloseMenu = false;
+
+            matrix = new WebKitCSSMatrix(page.style.webkitTransform)
+            m41 = matrix['m41'];
+        });
+
+        page.addEventListener('touchmove', function(event) {
+            var moveX      = event.changedTouches[0].pageX
+              , moveY      = event.changedTouches[0].pageY
+              , distanceX  = moveX - startX
+              , distanceY  = moveY - startY
+              , movedLeft  = distanceX < 0
+              , movedRight = distanceX > 5
+              , movedVert  = Math.abs(distanceY) > 15;
+
+            // var debugStr = 'x: ' + startX + ', ' + moveX + ', ' + distanceX + '<br>';
+            // debugStr = debugStr + 'y: ' + startY + ', ' + moveY + ', ' + distanceY + '<br>';
+            // debugStr = debugStr + 'L: ' + movedLeft + ', R: ' + movedRight + ', V: ' + movedVert + '<br>';
+            // debugStr = debugStr + 'menuOpen: ' + menuOpen;
+
+            // debug.style.display = 'block';
+            // debug.innerHTML = debugStr;
+
+            if (!movedVert) {
+
+                if (!menuOpen && movedRight || menuOpen && movedLeft) {
+                    event.preventDefault();
+                    addClass(body, 'menu-moving');
+                    page.style.webkitTransform = 'translate3d(' + (distanceX + m41) + 'px, 0 , 0)';    
+                }
+
+                if (!menuOpen && movedRight) {
+                    shouldOpenMenu = (Math.abs(distanceX) > (body.clientWidth / 2.5));
+                    shouldCloseMenu = !shouldOpenMenu;
+                }
+
+                if (menuOpen && movedLeft) {
+                    shouldCloseMenu = (Math.abs(distanceX) > (body.clientWidth / 4));
+                    shouldOpenMenu = !shouldCloseMenu;
+                }
+            }
+        });
+
+        page.addEventListener('touchend', function(event) {
+            if (shouldOpenMenu) {
+                openMenu();
+            } 
+
+            if (shouldCloseMenu) {
+                closeMenu();
+            }       
+        });
+    }
+
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+    }, 100);
+
+    function openMenu() {
+        // set height of the scrollable area to window innerHeight
+        menu.style.height = window.innerHeight + 'px';
+
+        page.style.webkitTransform = 'translate3d(260px, 0 , 0)';
+
+        menuOpening = true;
+
+        addClass(body, 'menu-opening');
+
+        page.addEventListener(transitionEnd, function() {
+            menuOpen = true;
+            menuOpening = false;
+
+            addClass(body, 'menu-open');
+            removeClass(body, 'menu-opening');
+            removeClass(body, 'menu-moving');
+
+            this.removeEventListener(transitionEnd, arguments.callee, false);
+        });
+    }
+
+    function closeMenu() {
+        page.style.webkitTransform = 'translate3d(0, 0 , 0)';
+                    
+        menuClosing = true;
+        
+        addClass(body, 'menu-closing');
+
+        page.addEventListener(transitionEnd, function() {
+            menuOpen = false;
+            menuClosing = false;
+
+            removeClass(body, 'menu-open');
+            removeClass(body, 'menu-closing');
+            removeClass(body, 'menu-moving');
+
+            this.removeEventListener(transitionEnd, arguments.callee, false);
+        });
+    }
+
+    function hasClass(el, className) {
+        className = " " + className + " ";
+        return (el.nodeType === 1 && (" " + el.className + " ").replace(/[\n\t\r]/g, " ").indexOf(className) > -1);
+    }
+
+    function addClass(el, className) {
+        if (!hasClass(el, className)) {
+            el.className += (el.className ? ' ' : '') + className;
+        }
+    }
+
+    function removeClass(el, className) {
+        if (hasClass(el, className)) {
+            el.className = el.className.replace(new RegExp('(\\s|^)' + className + '(\\s|$)'), ' ').replace(/^\s+|\s+$/g, '');
+        }
+    }
+
+    function whichTransitionEvent() {
+        var t, el = document.createElement('fakeelement');
+        var transitions = {
+                'transition':'transitionEnd',
+                'OTransition':'oTransitionEnd',
+                'MSTransition':'msTransitionEnd',
+                'MozTransition':'transitionend',
+                'WebkitTransition':'webkitTransitionEnd'
+            };
+
+        for (t in transitions) {
+            if( el.style[t] !== undefined ) {
+                return transitions[t];
+            }
+        }
+    }
+
+})();
+</script>
