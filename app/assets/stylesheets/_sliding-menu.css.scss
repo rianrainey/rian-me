@@ -1,5 +1,4 @@
 * {
-    margin: 0; padding: 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -7,14 +6,9 @@
 
 html {
     overflow: hidden;
-    font-family: Helvetica;
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
-}
-body {
-    font-family: Helvetica, sans-serif;
-    margin: 0; font-size: 13px; line-height: 1.231;
 }
 
 
@@ -40,7 +34,7 @@ body.menu-open #close-mask {
     position: relative;
     z-index: 2;
     min-width: 320px;
-    background-color: #fff;
+    background-color: $blue;
     -webkit-transition-property: -webkit-transform;
     -webkit-transform: translate3d(0, 0, 0);
 }
@@ -71,12 +65,12 @@ body.menu-moving #page-wrapper {
     #page-wrapper > header .trigger {
         position: absolute;
         z-index: 2;
-        top: 11px;
+        top: 0px;
         left: 14px;
         display: block;
         width: 24px;
         height: 21px;
-        background: transparent url(https://s-static.ak.facebook.com/rsrc.php/v1/y8/r/NwLTcDwF0zP.png) no-repeat;
+        font-size: 1.75em;
     }
 
     #page-wrapper .story {
