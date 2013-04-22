@@ -1,17 +1,37 @@
 body {
-  background: $blue;
   color: $white;
 
   a {
     color: $orange;
+    text-decoration: none;
   }
   h1, h2 {
     font-weight: normal;
   }
-  
-  header #title {
+
+  //******** Header ********** 
+  .nav-mobile {
+
+    @include media($tablet) {
+      display: none;
+    }
+  }
+
+  .nav-primary {
+    display: none;
+    @include media($tablet) {
+      display: block;
+    }
+  }
+  header .title {
     font-size: 1.5em;
     text-align: center;
+  }
+
+  #menu {
+    @include media($tablet) {
+      display: none;
+    }
   }
 
   #slider {
@@ -21,6 +41,7 @@ body {
     }
   }
 
+  //****** Content *******
   #page-wrapper {
     background-color: $dark-blue;
     @include outer-container;

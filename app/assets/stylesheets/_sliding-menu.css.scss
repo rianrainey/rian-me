@@ -34,7 +34,6 @@ body.menu-open #close-mask {
     position: relative;
     z-index: 2;
     min-width: 320px;
-    background-color: $blue;
     -webkit-transition-property: -webkit-transform;
     -webkit-transform: translate3d(0, 0, 0);
 }
